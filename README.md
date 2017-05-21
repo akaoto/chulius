@@ -17,7 +17,7 @@ First, create a dictionally file for speech recognition.
 Create and compile a vocaburally file (*.voca) and a grammar file (*.grammar).
 We use example at http://www.feijoa.jp/laboratory/raspberrypi/julius/ .
 
-* kaden.voca
+## kaden.voca
 
     % KADEN
     ƒeƒŒƒr   t e r e b i
@@ -32,7 +32,8 @@ We use example at http://www.feijoa.jp/laboratory/raspberrypi/julius/ .
     % NS_E
     [s]     silE
 
-* kaden.grammar
+
+## kaden.grammar
 
     S      : NS_B KADEN_ PLEASE NS_E
     KADEN_ : KADEN
@@ -42,7 +43,8 @@ Next, compile these files.
 `mkdfa.pl kaden`
 
 Finally, let us run Chulius on Python.
-* Python code
+
+##  test.py
 Class `Chulius` takes arguments as follows:
 1. String; Julius executeable file
 2. Stting; Julius configure file (*.conf or *.jconf)
