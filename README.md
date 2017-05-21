@@ -18,6 +18,7 @@ Create and compile a vocaburally file (*.voca) and a grammar file (*.grammar).
 We use example at http://www.feijoa.jp/laboratory/raspberrypi/julius/ .
 
 * kaden.voca
+
     % KADEN
     テレビ   t e r e b i
     電気    d e n k i
@@ -32,6 +33,7 @@ We use example at http://www.feijoa.jp/laboratory/raspberrypi/julius/ .
     [s]     silE
 
 * kaden.grammar
+
     S      : NS_B KADEN_ PLEASE NS_E
     KADEN_ : KADEN
     KADEN_ : KADEN WO
